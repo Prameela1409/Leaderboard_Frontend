@@ -1,0 +1,258 @@
+/* Leaderboard Styles */
+.bg-white {
+    background-color: white;
+    /* White background for the leaderboard */
+}
+
+.p-6 {
+    padding: 24px;
+    /* Padding for leaderboard */
+}
+
+.rounded-lg {
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.max-w-2xl {
+    max-width: 640px;
+    /* Maximum width for leaderboard */
+}
+
+.table-row:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+    /* Centering */
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+    /* Bottom margin */
+}
+
+.text-3xl {
+    font-size: 20px;
+    /* Font size for headings */
+}
+
+.font-bold {
+    font-weight: bold;
+    /* Bold text */
+}
+
+.flex {
+    display: flex;
+    /* Flexbox layout */
+}
+
+.justify-center {
+    justify-content: center;
+    /* Center items */
+}
+
+.items-end {
+    align-items: flex-end;
+    /* Align items to the bottom */
+}
+
+@media (max-width: 600px) {
+    .incontainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .incontainer {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+
+
+        .second {
+            padding: 20px;
+        }
+
+        .MuiTable-root {
+            font-size: 14px;
+        }
+    }
+
+    .abs {
+        color: yellow;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .bg-gradient-to-r {
+        background: linear-gradient(to right, #6a6c6e, #99969b);
+    }
+
+    .shadow-lg {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .transition-transform {
+        transition: transform 0.3s ease;
+    }
+
+    .hover\:scale-110:hover {
+        transform: scale(1.10);
+    }
+
+    .rounded-lg {
+        border-radius: 12px;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .items-center {
+        align-items: center;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .mx-2 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+
+
+    .p-5 {
+        padding: 1.25rem;
+    }
+
+    .text-white {
+        color: white;
+    }
+
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+
+    .text-lg {
+        font-size: 1.125rem;
+    }
+
+    .h-48 {
+        height: 12rem;
+        /* Height for the container */
+    }
+
+    .h-32 {
+        height: 8rem;
+        /* Height for first place */
+    }
+
+    .h-28 {
+        height: 7rem;
+        /* Height for second place */
+    }
+
+    .h-24 {
+        height: 6rem;
+        /* Height for third place */
+    }
+
+    .w-32 {
+        width: 8rem;
+        /* Width for blocks */
+    }
+
+    .py-4 {
+        padding-top: 10px;
+        /* Top padding */
+        padding-bottom: 10px;
+        /* Bottom padding */
+    }
+
+    .p-1 {
+        padding: 4px;
+        /* Outer padding */
+    }
+
+    /* Additional styles to attract blocks to each other */
+    .flex>div {
+        margin: 0;
+        /* Remove horizontal margin between blocks */
+    }
+
+    /* Optional: Add a hover effect for better interaction */
+    .rounded-lg {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow for depth */
+        transition: transform 0.2s;
+        /* Smooth transition for hover effect */
+    }
+
+    .rounded-lg:hover {
+        transform: scale(1.05);
+        /* Slightly enlarge on hover */
+    }
+
+    /* Font size for leaderboard text */
+    .blast-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 0.5);
+        /* Red color with transparency */
+        z-index: 1;
+        /* Ensure it is behind other content */
+        opacity: 0;
+        /* Start invisible */
+        transition: opacity 0.5s ease-in-out;
+        /* Smooth transition */
+    }
+
+    .blast-animation {
+        opacity: 1;
+        /* Make it visible */
+        animation: blast 1s forwards;
+        /* Trigger the blast animation */
+    }
+
+    @keyframes blast {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.5);
+            opacity: 0.8;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 0;
+            /* Fade out */
+        }
+    }
